@@ -21,7 +21,7 @@
 				<img src="/images/trash.png" alt="" />
 			</button>
 		</div>
-		<div v-if="completed" class="todo__buttons-container">
+		<div v-else class="todo__buttons-container">
 			<button @click="$emit('changeTaskStatus', todo.id)">
 				<img src="/images/return.png" alt="" />
 			</button>
